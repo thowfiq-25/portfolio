@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="600" viewBox="0 0 1200 600" role="img" aria-label="CineScope cover image">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#07080f"/>
+      <stop offset="1" stop-color="#17112b"/>
+    </linearGradient>
+    <radialGradient id="spot" cx="35%" cy="35%" r="70%">
+      <stop offset="0" stop-color="#00d4ff" stop-opacity="0.35"/>
+      <stop offset="0.55" stop-color="#00b8e6" stop-opacity="0.14"/>
+      <stop offset="1" stop-color="#000" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="film" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#00d4ff" stop-opacity="0.9"/>
+      <stop offset="1" stop-color="#00b8e6" stop-opacity="0.55"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1200" height="600" fill="url(#bg)"/>
+  <rect width="1200" height="600" fill="url(#spot)"/>
+
+  <!-- Film strip -->
+  <g transform="translate(120 210)">
+    <rect x="0" y="0" width="960" height="180" rx="20" fill="rgba(255,255,255,0.05)" stroke="rgba(0,212,255,0.25)" stroke-width="2"/>
+    <rect x="40" y="38" width="520" height="104" rx="14" fill="rgba(0,0,0,0.35)" stroke="rgba(0,212,255,0.25)" stroke-width="2"/>
+    <path d="M670 48l90 52-90 52z" fill="url(#film)" opacity="0.95"/>
+
+    <!-- Sprocket holes -->
+    <g fill="rgba(232,247,255,0.35)">
+      <rect x="22" y="24" width="10" height="18" rx="3"/>
+      <rect x="22" y="66" width="10" height="18" rx="3"/>
+      <rect x="22" y="108" width="10" height="18" rx="3"/>
+      <rect x="22" y="150" width="10" height="18" rx="3"/>
+
+      <rect x="928" y="24" width="10" height="18" rx="3"/>
+      <rect x="928" y="66" width="10" height="18" rx="3"/>
+      <rect x="928" y="108" width="10" height="18" rx="3"/>
+      <rect x="928" y="150" width="10" height="18" rx="3"/>
+    </g>
+  </g>
+
+  <!-- Title -->
+  <g font-family="Segoe UI, Tahoma, Geneva, Verdana, sans-serif">
+    <text x="120" y="110" font-size="56" fill="#ffffff" font-weight="800">CineScope</text>
+    <text x="120" y="155" font-size="22" fill="rgba(255,255,255,0.75)">React Native " TMDB API " Real-time movie info</text>
+  </g>
+</svg>
